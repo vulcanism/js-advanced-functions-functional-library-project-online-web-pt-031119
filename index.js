@@ -74,7 +74,11 @@ const fi = (function() {
     },
 
     compact: function(array) {
-
+      const truthyArray = []
+      for (let i = 0; i < array.length; i++) {
+        if (array[i]) truthyArray.push(array[i])
+      }
+      return truthyArray
     },
 
     sortBy: function(array, callback) {
