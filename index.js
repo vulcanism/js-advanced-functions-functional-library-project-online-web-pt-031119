@@ -5,6 +5,16 @@ const fi = (function() {
     },
 
     each: function(collection, callback) {
+      if (collection instanceof Array) {
+        for (let i = 0; i < collection.length; i++) {
+          callback(collection[i], i, collection)
+        }
+      } else {
+        for (const key in collection) {
+          callback(collection[key], key, collection)
+        }
+      }
+      return collection
 
     },
 
