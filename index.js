@@ -24,7 +24,7 @@ const fi = (function() {
         collection = Object.values(collection)
 
       for (let i = 0; i < collection.length; i++)
-        newCollection.push(callback(collection[idx]))
+        newCollection.push(callback(collection[i]))
 
       return newCollection
 
