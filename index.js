@@ -53,7 +53,12 @@ const fi = (function() {
     },
 
     filter: function(collection, predicate) {
+      const filteredArray = []
 
+      for (let i = 0; i < collection.length; i++) {
+        if (predicate(collection[i])) filteredArray.push(collection[i])
+      }
+      return filteredArray
     },
 
     size: function(collection) {
