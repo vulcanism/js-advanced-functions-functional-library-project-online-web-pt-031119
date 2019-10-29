@@ -93,7 +93,19 @@ const fi = (function() {
     },
 
     uniq: function(array, isSorted, callback) {
-
+      const uniqArray = []
+      const values = []
+      for (let i = 0; i < array.length; i++) {
+        if (callback) {
+          if (!values.includes(callback(array[i]))) {
+            values.push(callback(array[i]))
+            uniqArray.push(array[i])
+          }
+        } else {
+          uniqArray.includes(array[i]) ? null : uniqArray.push(array[i])
+        }
+      }
+      return uniqArray
     },
 
     keys: function() {
