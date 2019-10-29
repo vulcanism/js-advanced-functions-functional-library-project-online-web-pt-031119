@@ -118,8 +118,8 @@ const fi = (function() {
 
     values: function(object) {
       const valuesArray = []
-      for (const value in object) {
-        valuesArray.push(value)
+      for (const key in object) {
+        valuesArray.push(object[key])
       }
       return valuesArray
     },
