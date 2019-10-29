@@ -66,7 +66,7 @@ const fi = (function() {
     },
 
     first: function(array, n) {
-
+       return n ? array.slice(0, n) : array[0]
     },
 
     last: function() {
