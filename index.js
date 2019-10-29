@@ -88,10 +88,13 @@ const fi = (function() {
 
     },
 
-    functions: function() {
+    values: function() {
 
     },
 
+    functions: function() {
+
+    },
 
   }
 })()
