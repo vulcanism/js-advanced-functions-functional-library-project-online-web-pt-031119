@@ -20,6 +20,14 @@ const fi = (function() {
     map: function(collection, callback) {
       const newCollection = []
 
+      if (!(collection instanceof Array))
+        collection = Object.values(collection)
+
+      for (let i = 0; i < collection.length; i++)
+        newCollection.push(callback(collection[idx]))
+
+      return newCollection
+
     },
 
     reduce: function() {
