@@ -73,11 +73,11 @@ const fi = (function() {
       return n ? array.slice(array.length - n) : array.slice(-1)[0]
     },
 
-    compact: function() {
+    compact: function(array) {
 
     },
 
-    sortBy: function() {
+    sortBy: function(array, callback) {
 
     },
 
