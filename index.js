@@ -52,11 +52,11 @@ const fi = (function() {
       }
     },
 
-    filter: function() {
+    filter: function(collection, predicate) {
 
     },
 
-    size: function() {
+    size: function(collection) {
 
     },
 
