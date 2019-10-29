@@ -89,6 +89,11 @@ const fi = (function() {
     },
 
     // Fully just copied this from the solution. Seems kind of convoluted to me, and the lesson says it's a bonus, anyway.
+    unpack: function(receiver, arr) {
+      for (let val of arr)
+        receiver.push(val)
+    },
+
     flatten: function(collection, shallow, newArr=[]) {
       if (!Array.isArray(collection)) return newArr.push(collection)
       if (shallow) {
