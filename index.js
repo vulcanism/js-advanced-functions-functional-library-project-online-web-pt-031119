@@ -89,7 +89,7 @@ const fi = (function() {
     },
 
     flatten: function(array, shallow) {
-      return array.flat(shallow || Infinity)
+
     },
 
     uniq: function() {
