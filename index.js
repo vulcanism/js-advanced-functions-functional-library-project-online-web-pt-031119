@@ -125,7 +125,14 @@ const fi = (function() {
     },
 
     functions: function(object) {
+      const functionNames = []
 
+      for (const key in object) {
+        if (typeof object[key] === "function"){
+          functionNames.push(key)
+        }
+      }
+      return functionNames.sort()
     },
 
   }
