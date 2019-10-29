@@ -88,7 +88,7 @@ const fi = (function() {
       })
     },
 
-    flatten: function() {
+    flatten: function(array, shallow) {
 
     },
 
