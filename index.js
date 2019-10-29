@@ -117,7 +117,11 @@ const fi = (function() {
     },
 
     values: function(object) {
-
+      const valuesArray = []
+      for (const value in object) {
+        valuesArray.push(value)
+      }
+      return valuesArray
     },
 
     functions: function(object) {
