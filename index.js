@@ -18,6 +18,7 @@ const fi = (function() {
     },
 
     map: function(collection, callback) {
+      const newCollection = []
 
     },
 
