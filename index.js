@@ -110,7 +110,7 @@ const fi = (function() {
 
     keys: function(object) {
       const keysArray = []
-      for (let key in object){
+      for (const key in object){
         keysArray.push(key)
       }
       return keys
