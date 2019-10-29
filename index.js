@@ -108,15 +108,15 @@ const fi = (function() {
       return uniqArray
     },
 
-    keys: function() {
+    keys: function(object) {
 
     },
 
-    values: function() {
+    values: function(object) {
 
     },
 
-    functions: function() {
+    functions: function(object) {
 
     },
 
