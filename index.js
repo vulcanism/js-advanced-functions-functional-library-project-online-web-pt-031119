@@ -65,7 +65,7 @@ const fi = (function() {
       return (collection instanceof Array) ? collection.length : Object.keys(collection).length
     },
 
-    first: function() {
+    first: function(array, n) {
 
     },
 
