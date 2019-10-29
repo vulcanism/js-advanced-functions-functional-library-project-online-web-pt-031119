@@ -27,11 +27,23 @@ const fi = (function() {
         newCollection.push(callback(collection[i]))
 
       return newCollection
-
     },
 
     reduce: function(collection, callback, acc) {
-
+      let memo
+      if (acc) {
+        memo = acc
+        for (let i = 0; i < collection.length; i++) {
+          memo = callback(memo, collection[i], collection)
+        }
+      } else {
+        memo = collection[0]
+        const slicedColl = collection.slice(1)
+        for (let i = 0; i < slicedColl.length; i++) {
+          memo = callback(memo, slicedColl[i], slicedColl)
+        }
+      }
+      return memo
     },
 
     functions: function() {
