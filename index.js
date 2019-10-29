@@ -30,7 +30,7 @@ const fi = (function() {
 
     },
 
-    reduce: function() {
+    reduce: function(collection, callback, acc) {
 
     },
 
