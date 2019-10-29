@@ -46,6 +46,22 @@ const fi = (function() {
       return memo
     },
 
+    find: function() {
+
+    },
+
+    filter: function() {
+
+    },
+
+    size: function() {
+
+    },
+
+    first: function() {
+
+    },
+
     functions: function() {
 
     },
