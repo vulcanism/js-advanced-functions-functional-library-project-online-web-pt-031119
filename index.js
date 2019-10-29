@@ -64,6 +64,30 @@ const fi = (function() {
 
     },
 
+    last: function() {
+
+    },
+
+    compact: function() {
+
+    },
+
+    sortBy: function() {
+
+    },
+
+    flatten: function() {
+
+    },
+
+    uniq: function() {
+
+    },
+
+    keys: function() {
+
+    },
+
     functions: function() {
 
     },
