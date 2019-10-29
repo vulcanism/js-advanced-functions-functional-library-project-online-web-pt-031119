@@ -38,9 +38,9 @@ const fi = (function() {
         }
       } else {
         memo = collection[0]
-        const slicedColl = collection.slice(1)
-        for (let i = 0; i < slicedColl.length; i++) {
-          memo = callback(memo, slicedColl[i], slicedColl)
+        const sliced = collection.slice(1)
+        for (let i = 0; i < sliced.length; i++) {
+          memo = callback(memo, sliced[i], sliced)
         }
       }
       return memo
