@@ -92,7 +92,7 @@ const fi = (function() {
 
     },
 
-    uniq: function() {
+    uniq: function(array, isSorted, callback) {
 
     },
 
