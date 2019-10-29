@@ -69,8 +69,8 @@ const fi = (function() {
        return n ? array.slice(0, n) : array[0]
     },
 
-    last: function() {
-
+    last: function(array, n) {
+      return n ? array.slice(array.length - n) : array.slice(-1)[0]
     },
 
     compact: function() {
