@@ -46,7 +46,7 @@ const fi = (function() {
       return memo
     },
 
-    find: function() {
+    find: function(collection, predicate) {
 
     },
 
