@@ -82,7 +82,10 @@ const fi = (function() {
     },
 
     sortBy: function(array, callback) {
-
+      const newArray = [...array]
+      return newArray.sort(function(a, b) {
+        return callback(a) - callback(b)
+      })
     },
 
     flatten: function() {
